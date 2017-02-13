@@ -1,0 +1,11 @@
+*.class
+.DS_Store
+/.idea
+/conf/Catalina
+/endorsed
+/logs
+/target
+/temp
+/work
+*.iml
+dependency-reduced-pom.xml
