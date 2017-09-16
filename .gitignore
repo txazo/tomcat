@@ -7,5 +7,6 @@
 /target
 /temp
 /work
+/webapps/examples
 *.iml
 dependency-reduced-pom.xml
