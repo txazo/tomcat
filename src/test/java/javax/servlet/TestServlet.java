@@ -24,8 +24,8 @@ public class TestServlet extends HttpServlet {
     protected void doGet(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
         log.info("doGet()");
 
-        resp.setStatus(HttpServletResponse.SC_OK);
         try {
+            resp.setStatus(HttpServletResponse.SC_OK);
             resp.getWriter().write("Success");
         } finally {
             resp.getWriter().close();
