@@ -1,8 +1,9 @@
 #!/bin/bash
 
-classPath="webapps/test/WEB-INF/classes/javax/servlet"
+sourcePath="target/test-classes/javax/servlet"
+destPath="webapps/test/WEB-INF/classes/javax/servlet"
 
-rm -f ${classPath}/*.class
-cp target/test-classes/javax/servlet/*.class ${classPath}
+rm -f ${destPath}/*.class
+cp ${sourcePath}/*.class ${destPath}
 
-echo "[Shell] Copy target/test-classes/javax/servlet/*.class to ${classPath}"
+echo "[Shell] Copy ${sourcePath}/*.class to ${destPath}"
