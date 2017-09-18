@@ -7,23 +7,23 @@ import java.io.IOException;
 
 public class TestFilter implements Filter {
 
-    private static final Log log = LogFactory.getLog(TestFilter.class);
+    private static final Log LOG = LogFactory.getLog(TestFilter.class);
 
     @Override
     public void init(FilterConfig filterConfig) throws ServletException {
-        log.info("init()");
+        LOG.info("init()");
     }
 
     @Override
     public void doFilter(ServletRequest request, ServletResponse response, FilterChain chain) throws IOException, ServletException {
-        log.info("doFilter() begin");
+        LOG.info("doFilter() begin");
         chain.doFilter(request, response);
-        log.info("doFilter() end");
+        LOG.info("doFilter() end");
     }
 
     @Override
     public void destroy() {
-        log.info("destroy()");
+        LOG.info("destroy()");
     }
 
 }

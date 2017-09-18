@@ -12,17 +12,17 @@ public class TestServlet extends HttpServlet {
 
     private static final long serialVersionUID = 4611204794014183020L;
 
-    private static final Log log = LogFactory.getLog(TestServlet.class);
+    private static final Log LOG = LogFactory.getLog(TestServlet.class);
 
     @Override
     public void init(ServletConfig config) throws ServletException {
         super.init(config);
-        log.info("init()");
+        LOG.info("init()");
     }
 
     @Override
     protected void doGet(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
-        log.info("doGet()");
+        LOG.info("doGet()");
 
         try {
             resp.setStatus(HttpServletResponse.SC_OK);
@@ -34,7 +34,7 @@ public class TestServlet extends HttpServlet {
 
     @Override
     public void destroy() {
-        log.info("destroy()");
+        LOG.info("destroy()");
     }
 
 }

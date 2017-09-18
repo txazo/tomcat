@@ -5,16 +5,16 @@ import org.apache.juli.logging.LogFactory;
 
 public class TestListener implements ServletContextListener {
 
-    private static final Log log = LogFactory.getLog(TestListener.class);
+    private static final Log LOG = LogFactory.getLog(TestListener.class);
 
     @Override
     public void contextInitialized(ServletContextEvent sce) {
-        log.info("contextInitialized()");
+        LOG.info("contextInitialized()");
     }
 
     @Override
     public void contextDestroyed(ServletContextEvent sce) {
-        log.info("contextDestroyed()");
+        LOG.info("contextDestroyed()");
     }
 
 }
